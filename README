@@ -1,0 +1,19 @@
+import time
+
+print('Enter the time in seconds: ')
+t = input()
+
+while t.isdigit() == False:
+  print(f'{t} is not number! Try again!')
+  t = input()
+
+t = int(t)
+
+while t > 0:
+  m, s = divmod(t, 60)
+  timer = f'{m:02d}:{s:02d}'
+  print(timer)
+  time.sleep(1)
+  t -=1
+
+print('Time is up!')
