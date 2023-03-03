@@ -1,3 +1,4 @@
+
 import time
 
 print('Enter the time in seconds: ')
