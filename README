@@ -12,7 +12,8 @@ t = int(t)
 
 while t > 0:
   m, s = divmod(t, 60)
-  timer = f'{m:02d}:{s:02d}'
+  h, m = divmod(m, 60)
+  timer = f'{h:02d}:{m:02d}:{s:02d}'
   print(timer)
   time.sleep(1)
   t -=1
